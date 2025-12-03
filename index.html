@@ -3,40 +3,17 @@
   <head>
     <title>Food Delivery Chatbot</title>
     <meta charset="UTF-8">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-      #chatbox {
-        width: 400px;
-        height: 500px;
-        border: 1px solid #ccc;
-        padding: 10px;
-        overflow-y: scroll;
-        margin-bottom: 10px;
-      }
-      .user {
-        text-align: right;
-        color: blue;
-        margin: 5px 0;
-      }
-      .bot {
-        text-align: left;
-        color: green;
-        margin: 5px 0;
-      }
-    </style>
   </head>
 
   <body>
     <h2>Food Delivery Chatbot</h2>
 
-    <div id="chatbox"></div>
+    <df-messenger
+      chat-title="FoodBot"
+      agent-id="d3553cb5-16e7-400b-bcb5-7340ce88358f"
+      language-code="en"
+    ></df-messenger>
 
-    <input id="userInput" type="text" placeholder="Type your message..." style="width:300px;">
-    <button onclick="sendMessage()">Send</button>
-
-    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   </body>
 </html>
-
